@@ -103,10 +103,10 @@
             btn.textContent = 'LAUNCHING...';
             btn.disabled = true;
             
-            // INSTANT LOAD PATCH
+            // INSTANT LOAD PATCH - REMOVED LOADING SCREEN
+            document.getElementById('pwa-container').style.display = 'none';
+            // In a real app, this would trigger the game engine mount
             alert('Game Engine Ready! Hospital Havoc is loading... 🚀✨');
-            btn.textContent = 'START_GAME';
-            btn.disabled = false;
         }
 
         // Prevent zoom on double-tap
