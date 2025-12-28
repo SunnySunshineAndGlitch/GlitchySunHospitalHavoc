@@ -100,15 +100,13 @@
 
         function startGame() {
             const btn = document.querySelector('.btn');
-            btn.textContent = 'INITIALIZING...';
+            btn.textContent = 'LAUNCHING...';
             btn.disabled = true;
             
-            // Simulate game loading
-            setTimeout(() => {
-                alert('Game Engine Ready! Hospital Havoc is loading... 🚀✨');
-                btn.textContent = 'START_GAME';
-                btn.disabled = false;
-            }, 1500);
+            // INSTANT LOAD PATCH
+            alert('Game Engine Ready! Hospital Havoc is loading... 🚀✨');
+            btn.textContent = 'START_GAME';
+            btn.disabled = false;
         }
 
         // Prevent zoom on double-tap
